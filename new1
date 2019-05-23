@@ -1,0 +1,14 @@
+
+        [Test]
+        public void GetAddition_Input124point45and52point63_Returns177point08()
+        {
+            //Arrange 
+            double number1 = 124.45;
+            double number2 = 52.63;
+            double expectedResult = number1 + number2;
+            Calc testCalc = new Calc(number1, number2);
+            //Act 
+            double actualResult = testCalc.GetAddition();
+            //Assert
+            Assert.AreEqual(expectedResult, actualResult);
+        }
