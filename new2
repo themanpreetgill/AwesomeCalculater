@@ -1,0 +1,40 @@
+  [Test]
+        public void GetAddition_Input102point61and30point23_Returns132point83()
+        {
+            //Arrange 
+            double number1 = 102.61;
+            double number2 = 30.23;
+            double expectedResult = number1 + number2;
+            Calc testCalc = new Calc(number1, number2);
+            //Act 
+            double actualResult = testCalc.GetAddition();
+            //Assert
+            Assert.AreEqual(expectedResult, actualResult);
+        }
+
+        [Test]
+        public void GetAddition_Input22point36and230point13_Returns252point49()
+        {
+            //Arrange 
+            double number1 = 22.36;
+            double number2 = 230.13;
+            double expectedResult = number1 + number2;
+            Calc testCalc = new Calc(number1, number2);
+            //Act 
+            double actualResult = testCalc.GetAddition();
+            //Assert
+            Assert.AreEqual(expectedResult, actualResult);
+        }
+        [Test]
+        public void GetSubtraction_Input54point36and23point13_Returns31point23()
+        {
+            //Arrange 
+            double number1 = 54.36;
+            double number2 = 23.13;
+            double expectedResult = number1 - number2;
+            Calc testCalc = new Calc(number1, number2);
+            //Act 
+            double actualResult = testCalc.GetSubtraction();
+            //Assert
+            Assert.AreEqual(expectedResult, actualResult);
+        }
